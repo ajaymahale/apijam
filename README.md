@@ -1,19 +1,19 @@
 # Apigee API Jam Lab Guides
 
-## Note: For the previous version of the API Jam archived on 18th October 2019, please navigate to supporting material in the [Archives folder](./Archives/Archived_10-18-2019).
+The original content has been borrowed from Googles API Jam repository on github.
 
-This repository contains the supporting material for Apigee hands-on workshops that introduces users to API Management concepts and the Apigee API Management Platform. We call these events "**API Jams**".
-These hands-on workshops take into account the experience of hundreds customers who have used Google's Apigee platform to implement successful API programs. By the end of these workshops, attendees will walk away with practical experience using our platform, along with an understanding of its comprehensive capabilities.
+These labs and the supporting material were intended to be run on the Apigee Cloud Platform. We will be running them in the Private Cloud Apigee Installation. There will be minor cosmetic and feature differences you will find while running the labs like the screenshots provided in the content vs what you see on screen will have slight variations. Feel free to catch an instructor if you get stuck.
 
-All of the material here is released under the [Apache 2.0 license](./LICENSE.md)
+## Agenda
 
-## Modules
+** **
+### [Introductions (9:30 am - 9:45 am)](#)
+* Quick Introductions
+* Setup for labs 
 
-This material is divided into different API Jam modules, based on the API Management funtionalities they showcase, the needs of different API program stakeholder, and varying degrees of complexity.
+** **
 
-**Note - If you are using this repository during a virtual or in-person API Jam, please reference the appropriate module(s) based on instructor instructions.**
-
-### [Module 1 - API Management](./Module-1) 
+### [API JAM - API Management (10:00 am - 12:00 pm)](./Module-1) 
 * Lab 1 - Create a Reverse Proxy with OpenAPI specification
 * Lab 2 - Apps, API Products & API Keys
 * Lab 3 - Manage tiered API Product subscription through API call quotas
@@ -22,13 +22,28 @@ This material is divided into different API Jam modules, based on the API Manage
 
 ** **
 
-### [Module 2a - API Security Part 1](./Module-2a) 
+### [Lunch + Architecture Conversations (12:00 pm - 1:00 pm)](#)
+* Pick the brains of Apigee experts from Google while enjoying lunch
+
+** ** 
+
+### [Api Jam - DSG security deep dive (1:00 pm - 2:00 pm)](./Module-2a) 
 * Introduction to API Security
 * Lab 1 - Throttle your API Traffic to prevent DoS, using Apigee Spike Arrest
 * Lab 2 - OAuth 2.0 based API security (OAuth 2.0 Client Credentials)
 
 ** **
 
+### [Discovery on project API e.g. MBR (2:00 pm - 3:00 pm)](#)
+* Whiteboard design and discussions on APIs you intend to onboard onto the DSG
+
+** **
+
+## Self Paced Modules
+
+The below modules could be used by the participants as self paced practice to get a deeper understanding of advanced Apigee topics.
+
+** **
 ### [Module 2b - API Security Part 2](./Module-2b) 
 * Lab 3 - Protect your APIs against content-based threats
 * Lab 4 - JWT based API security
