@@ -38,35 +38,7 @@ When registering an application to an API product that metadata is loaded when v
 
 * If you haven't followed previous models you can follow this lab too but will see less data in your dashboards.
 
-* (Optional) If you want the full experience setup a load generator before to see some data in your dashboards.
 
-# (optional) Add some load to API proxies
-
-If you have not followed previous modules you can use a load generator to have some data in your reports.
-
-You have to have an API proxy with a default API key policy and 3 API keys ideally for different Apps and API products.
-
-## Configure and Run Load Generator
-
-You can create a new proxy by uploading the proxy in the *loadgen* folder in this repository.
-
-1. Create a new proxy by clicking **Develop > API Proxies > + Proxy**
-
-2. In the new proxy wizard select to upload a proxy bundle and upload your .zip file from the repository. You can download this .zip file [**here**](../../../Module-1/Labs/Lab%205/loadgen/LoadGen-Proxy.zip?raw=true)
-
-![image alt text](media/image_1.png)
-
-![image alt text](media/image_2.png)
-
-3. Click **Build.**
-
-4. After the proxy was created you can directly open it in the editor and go to the **Develop** tab to change the values for your proxies and api keys. Navigate to the **config/model.json** resource in the Resources section on the left panel, and change the values as shown below:
-
-![image alt text](media/image_3.png)
-
-5. After changing the values **Save** and **deploy** the proxy and run the proxy from the **Trace** tab.
-
-6. Let the load generator run for a while and **undeploy** it to make it stop producing traffic.
 
 # Understand API usage using the pre-built Apigee analytics dashboards
 
