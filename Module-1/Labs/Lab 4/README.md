@@ -130,7 +130,6 @@ Enter user : dis-ptb50@test.gov.au
 ![image alt text](./media/image_202b.PNG)
 ![image alt text](./media/image_202c.PNG)
 ![image alt text](./media/image_202d.PNG)
-![image alt text](./media/image_203.PNG)
 3. Create an App & Subscribe to your API Product
 ![image alt text](./media/image_204.PNG)
 ![image alt text](./media/image_204a.PNG)
@@ -149,11 +148,11 @@ Enter user : dis-ptb50@test.gov.au
 2. Sign in as a DSP Team admin
 
 
-1. Create an Team App
+3. Create an Team App
 
 
-2. Subscribe to your API Product
-3. Get access to your API Key + M2M credential
+4. Subscribe to your API Product
+5. Get access to your API Key + M2M credential
 # Lab Video
 
 If you would rather watch a video that covers this topic, point your browser [here](https://youtu.be/_gDpzDJPNQg).
