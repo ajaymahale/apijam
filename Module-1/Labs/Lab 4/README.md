@@ -1,4 +1,4 @@
-# Lab 4 - Build an App Developer Experience using Apigee Integrated Developer Portals
+# Lab 4 - Build an App Developer Experience using Apigee
 
 *Duration : 30 mins*
 
@@ -122,16 +122,38 @@ Enter user : dis-ptb50@test.gov.au
 ## App Developer sign-up & Register Apps
 
 1. Browse to the developer Portal
+![image alt text](./media/image_201.PNG)
+
 2. Sign-in as a developer 
+![image alt text](./media/image_202.PNG)
+![image alt text](./media/image_202_a.PNG)
+![image alt text](./media/image_202_b.PNG)
+![image alt text](./media/image_202_c.PNG)
+![image alt text](./media/image_202_d.PNG)
+![image alt text](./media/image_203.PNG)
 3. Create an App
-4. Subscribe to your Api Proxy
+![image alt text](./media/image_204.PNG)
+![image alt text](./media/image_204a.PNG)
+
+4. Subscribe to your Api Product
+![image alt text](./media/image_205.PNG)
+
 5. Get Access to your Api Key
 
 
 ### Create DSP(Team) App
 
 // TBD: This feature exists but is not covered in this lab. The DPO is responsible for onboarding DSPs(Teams) on to the platform. Ask your friendly neighborhood Terem instructor for more details or a demo.
+1. Browse to the developer portal
 
+2. Sign in as a DSP Team admin
+
+
+1. Create an Team App
+
+
+2. Subscribe to your API Product
+3. Get access to your API Key + M2M credential
 # Lab Video
 
 If you would rather watch a video that covers this topic, point your browser [here](https://youtu.be/_gDpzDJPNQg).
