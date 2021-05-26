@@ -48,7 +48,7 @@ In this lab, we will learn how to
 
 ![Image showing selection of API Proxy type.  User has selected Reverse Proxy and clicked "Use OpenAPI Spec"](./media/image_7.png)
 
-1. Add https://raw.githubusercontent.com/ajaymahale/apijam/master/Module-1/Resources/products-catalog-spec.yaml to the textbox to enter the OAS 
+4. Add https://raw.githubusercontent.com/ajaymahale/apijam/master/Module-1/Resources/products-catalog-spec.yaml to the textbox to enter the OAS 
 
 ![Image showing selection of previously imported OpenAPI Spec from list of available specs.](./media/image_8.png)
 
@@ -93,11 +93,8 @@ Let us test the newly built API proxy. You can use any HTTP client like cURL or 
 
 ### Using cURL
 
-org = Organization name
-env = Environment where API is deployed
-
 ```
-curl -X GET "https://{{org}}-{{env}}.apigee.net/{{your initials}}_hipster-products-api/products"
+curl -X GET "http://apiptb.devtest.atohdtnet.gov.au/{{your initials}}_hipster-products-api/products"
 ```
 
 ### Using Trace Tool:
