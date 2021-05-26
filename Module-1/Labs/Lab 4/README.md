@@ -144,24 +144,30 @@ Enter user : dis-ptb50@test.gov.au
 
 // TBD: This feature exists but is not covered in this lab. The DPO is responsible for onboarding DSPs(Teams) on to the platform. Ask your friendly neighborhood Terem instructor for more details or a demo.
 1. Browse to the developer portal
+![image alt text](./media/image_301.PNG)
+
 
 2. Sign in as a DSP Team admin
+![image alt text](./media/image_302.PNG)
+![image alt text](./media/image_302_a.PNG)
+![image alt text](./media/image_302b.PNG)
+![image alt text](./media/image_302c.PNG)
+![image alt text](./media/image_302d.PNG)
 
 
-3. Create an Team App
+3. Create an Team App & Subscribe to your API Product
+![image alt text](./media/image_303.PNG)
+![image alt text](./media/image_304.PNG)
+![image alt text](./media/image_305.PNG)
 
 
-4. Subscribe to your API Product
-5. Get access to your API Key + M2M credential
+1. Get access to your API Key + M2M credential
+![image alt text](./media/image_306.PNG)
+
 # Lab Video
 
 If you would rather watch a video that covers this topic, point your browser [here](https://youtu.be/_gDpzDJPNQg).
 
-# Earn Extra-points
-
-* Add a second product to the portal and test it by launching the Live Portal.
-
-* Update your API specification, and then [take a snapshot](https://docs-new.apigee.com/publish-apis#take-snapshot) of the specification to update the portal documentation.
 
 # Quiz
 
