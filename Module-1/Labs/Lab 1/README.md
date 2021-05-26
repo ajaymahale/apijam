@@ -134,8 +134,7 @@ If you like to learn by watching, here is a short video on creating a reverse pr
 
 # Earn Extra-points
 
-Now that you have created a reverse proxy using an OpenAPI spec, click on the Develop tab and explore the flow conditions populated from the OpenAPI spec.  Further expore the trace tab in the API Proxy editor which supports filtering traces as well as downloading trace data for offline use.  Also, explore the OpenAPI Spec editor which allows you to edit an OpenAPI specification and supports bidirectional navigation between the yaml/json and a live view of the rendered OpenAPI spec.  See how you can generate an API Proxy using the "Generate proxy" action in the Specs view.
-![Picture of "Generate proxy" action in Specs view](./media/image_21.png)
+Now that you have created a reverse proxy using an OpenAPI spec, click on the Develop tab and explore the flow conditions populated from the OpenAPI spec.  Further explore the trace tab in the API Proxy editor which supports filtering traces as well as downloading trace data for offline use.  
 
 # Quiz
 
