@@ -127,9 +127,9 @@ Enter user : dis-ptb50@test.gov.au
 2. Sign-in as a developer 
 ![image alt text](./media/image_202.PNG)
 ![image alt text](./media/image_202_a.PNG)
-![image alt text](./media/image_202_b.PNG)
-![image alt text](./media/image_202_c.PNG)
-![image alt text](./media/image_202_d.PNG)
+![image alt text](./media/image_202b.PNG)
+![image alt text](./media/image_202c.PNG)
+![image alt text](./media/image_202d.PNG)
 ![image alt text](./media/image_203.PNG)
 3. Create an App
 ![image alt text](./media/image_204.PNG)
