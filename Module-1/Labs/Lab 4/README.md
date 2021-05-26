@@ -131,14 +131,14 @@ Enter user : dis-ptb50@test.gov.au
 ![image alt text](./media/image_202c.PNG)
 ![image alt text](./media/image_202d.PNG)
 ![image alt text](./media/image_203.PNG)
-3. Create an App
+3. Create an App & Subscribe to your API Product
 ![image alt text](./media/image_204.PNG)
 ![image alt text](./media/image_204a.PNG)
 
-4. Subscribe to your Api Product
+4. Get Access to you consumer key
 ![image alt text](./media/image_205.PNG)
 
-5. Get Access to your Api Key
+
 
 
 ### Create DSP(Team) App
