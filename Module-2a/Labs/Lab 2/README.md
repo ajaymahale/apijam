@@ -6,10 +6,10 @@
 
 # Use case
 
-You have an API that is consumed by trusted applications. You want to secure that API using the appropiate authentication mechanisms. 
+You have an API that is consumed by trusted applications. You want to secure that API using the appropriate authentication mechanisms. 
 
-This session would be a presentation of the proposed authentication worflow via the relevant Identitity Provider and Authentication services.
+This session would be a presentation of the proposed authentication workflow via the relevant Identity Provider and Authentication services.
 
-The demo adds authentication steps to the proxy you have build in the previous Labs.Optionaly you can have a look at this proxy that shows the end result of the workflow being created for the purposes of this demo.
+The demo adds authentication steps to the proxy you have build in the previous Labs.Optionally you can have a look at this proxy that shows the end result of the workflow being created for the purposes of this demo.
 
 http://apiadmin.atodnet.gov.au/platform/ato/proxies/Miguel-Hipster-Products-API/overview/5
