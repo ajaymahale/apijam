@@ -111,53 +111,17 @@ Enter user : dis-ptb50@test.gov.au
 
 
 
-## Publish the Bronze (Free) API Product to the Portal
+## Ensure that Bronze (Free) API Product is accessible as Public
 
-1. Click the Portal Editor’s dropdown and select **API catalog**.
+1. Visit the Apigee Edge
+2. Find your Bronze Api Product 
+3. Ensure that it's access is public
 
-![image alt text](./media/image_5.png)
-
-2. Click **+** to select the Bronze API Product to publish to the Portal. Select the API Product to publish and click **Next**.
-
-![image alt text](./media/image_6.png)
-
-3. Make sure that the **Published** checkbox is checked, so that the Bronze API Product is visible to authorized App developers through the API catalog, during App creation.
-
-![image alt text](./media/AddAPIToPortalBronze3.png)
-
-4. Click the **Source API spec** dropdown and select **Choose a different spec...**.
-
-![image alt text](./media/image_7.png)
-
-5. Select the recently updated OpenAPI Specification to use as a source. The current version (snapshot) of the selected OpenAPI Specification will be used to generate the documentation for this API product in the portal.
-
-![image alt text](./media/image_8.png)
-
-6. Select the **Registered users** option so registered developers on the Developer Portal can view this API through the portal. Click **Next**.
-
-![image alt text](./media/image_9.png)
-
-7. Select the **Image** button to update the icon image associated with this API product.
-
-![image alt text](./media/image_9b.png)
-
-8. Then select **Image URL** and provide the following URL to import image.
-
-![image alt text](./media/image_9a.png)
-
-Image URL: `https://raw.githubusercontent.com/apigee/apijam/master/Module-1/Labs/Lab%204/media/HipsterAPIProductImage.png`
-
-![image alt text](./media/image_9c.png)
-
-9. Click **Save**.
-
-![image alt text](./media/image_9d.png)
-
-The API product is now published to the developer portal.
+![image alt text](./media/image_111.png)
 
 ## App Developer sign-up
 
-1. Click the **Live Portal** link to launch a browser tab/window with the new Developer Portal.
+1. Browse to the developer Portal
 
 ![image alt text](./media/image_10.png)
 
