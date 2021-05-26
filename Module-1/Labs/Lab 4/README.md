@@ -14,7 +14,7 @@ Apigee Edge provides multiple options for your Developer Portal. Apigee supports
 
 ![image alt text](./media/devportals.png)
 
-In this lab, you will create an Integrated Developer Portal wherein you will publish API Products, and through which app developers can
+In this lab, we will explore the developer portal pre-installed within the ATO.
 * learn API usage through OpenAPI specification based interactive documentation
 * register Apps that consume API Products, and thereby
 * generate App client credentials (API Key and Secret) that can be used to consume APIs.
@@ -80,21 +80,36 @@ In order to ensure that we have an updated OpenAPI Spec that accurately describe
 
   ![image alt text](./media/EditSpec.png)
 
-## Create a Developer Portal
+## Create a Catalog Item in the Developer Portal
 
-1. Navigate to **Publish → Portals** and click **+Portal**, or **Get started** (if you haven't created any portals yet within the org).
+1. Navigate to the developer Portal and Login as a content creator
 
-![image alt text](./media/image_3.png)
+![image alt text](./media/image_101.png)
 
-2. Enter details in the portal creation wizard. Replace **{{your-initials}}** with the initials of your name.
+2. Login to the Portal as a content editor
+![image alt text](./media/image_102.png)
+![image alt text](./media/image_103.png)
 
-  * Name: `{{your initials}}_Hipster API Portal`
+Enter user : dis-ptb50@test.gov.au
+![image alt text](./media/image_104.png)
+![image alt text](./media/image_105.png)
 
-  * Description: `Developer portal for consumption of Hipster APIs.`
 
-3. Click **Create**
+3. Click **Content**
 
-![image alt text](./media/image_4.png)
+![image alt text](./media/image_106.png)
+
+4. Click **Add Content** and then **API Doc**
+![image alt text](./media/image_107.png)
+![image alt text](./media/image_108.png)
+
+5. Create a new Api Catalog item and upload the OAS spec that you created above
+![image alt text](./media/image_109.png)
+
+1. View how the catalog item would look on the developer portal
+![image alt text](./media/image_110.png)
+
+
 
 ## Publish the Bronze (Free) API Product to the Portal
 
