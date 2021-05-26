@@ -30,7 +30,7 @@ These labs and the supporting material were intended to be run on the Apigee Clo
 ### [Api Jam - DSG security deep dive (1:00 pm - 2:00 pm)](./Module-2a) 
 * Introduction to API Security
 * Lab 1 - Throttle your API Traffic to prevent DoS, using Apigee Spike Arrest
-* Lab 2 - OAuth 2.0 based API security (OAuth 2.0 Client Credentials)
+* Lab 2 - DSG security deep dive
 
 ** **
 
