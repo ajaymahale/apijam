@@ -12,4 +12,4 @@ This session would be a presentation of the proposed authentication workflow via
 
 The demo adds authentication steps to the proxy you have build in the previous Labs.Optionally you can have a look at this proxy that shows the end result of the workflow being created for the purposes of this demo.
 
-https://github.com/ajaymahale/apijam/blob/master/Module-2a/Resources/xxxx-Hipster-Products-API.zip
+https://github.com/ajaymahale/apijam/blob/master/Module-2a/Resources/Hipster-Products-API-AUTH.zip
