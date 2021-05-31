@@ -62,7 +62,7 @@ Your API proxy should now include configurations to support CORS processing.
 
 ## Update the Open API Spec
 
-In order to ensure that we have an updated OpenAPI Spec that accurately describes the API endpoint exposed through our API Proxy, we must first modify the spec - specifically the `host`, `basepath`, `securityDefinitions` and `security` properties. To do this, navigate to **Develop → Specs** on the main menu, select the spec that we previously imported in Lab 1, and modify the the `host`, `basepath`, `securityDefinitions` and `security` properties as shown below:
+In order to ensure that we have an updated OpenAPI Spec that accurately describes the API endpoint exposed through our API Proxy, we must first modify the spec - specifically the `host`, `basepath`, `securityDefinitions` and `security` properties. Open your spec yaml file and change to:
 
     host: {{your API proxy host}}
     basePath: /v1/{{your initials}}_hipster-products-api
