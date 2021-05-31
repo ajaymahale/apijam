@@ -7,9 +7,7 @@ API developers and architects who want to build a secure API, this workshop is f
 This workshop will be valuable to API developers, architects, and anyone who wants to understand how to secure APIs exposed through Apigee Edge.
 
 ## What do attendees need to bring
-- (**Required for Virtual API Jams**) Register for the session. Make sure to register for the Virtual API Jam so that we can send you the relevant connection details to join the online session.
 - Browser (Chrome). A modern web browser like Chrome (v50+) to access the Apigee Edge Platform UI.
-- (**Required for Virtual API Jams**) An Apigee Account. Create and activate your free Apigee Edge account prior to attending the workshop. You can sign up for one at https://login.apigee.com/sign_up. Ensure that your Org has been provisioned as part of your trial account.
 - A basic understanding of Apigee Edge entities such as API Proxies, Apps, and Products. For a refresher of the API Management Lifecycle, please complete lab exercises in Module-1 [here](../Module-1).
 
 ## Workshop Agenda
@@ -17,7 +15,7 @@ This workshop will be valuable to API developers, architects, and anyone who wan
 ### Module 2a
 * Introduction to API Security
 * Lab 1 - Throttle your API Traffic to prevent DoS, using Apigee Spike Arrest [Link](./Labs/Lab%201)
-* Lab 2 - OAuth 2.0 based API security (OAuth 2.0 Client Credentials) [Link](./Labs/Lab%202)
+* Lab 2 - API Security : DSG Security and Authentication Worlflow [Link](./Labs/Lab%202)
 
 Let's get started with [Lab 1](./Labs/Lab%201).
 
