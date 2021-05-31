@@ -82,7 +82,7 @@ In order to ensure that we have an updated OpenAPI Spec that accurately describe
 
 ## Create a Catalog Item in the Developer Portal
 
-1. Navigate to the developer Portal and Login as a content creator
+1. Navigate to the developer Portal(refer to emailed Getting Started sheet for urls) and Login as a content creator
 
 ![image alt text](./media/image_101.png)
 
