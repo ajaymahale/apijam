@@ -1,5 +1,9 @@
 # Lab 3 - Manage tiered API Product subscription through API call quotas
 
+#### ***The screenshots are taken from the Apigee Cloud version and may differ slightly from what you see in your installation within the organisation. All concepts remain the same.***
+
+
+#
 Duration : 15 mins
 
 Persona : API Product Team & API Dev Team
