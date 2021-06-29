@@ -39,13 +39,13 @@ For this lab, you will need an API proxy that is not currently secured.  If you 
 
 ## Choose and test the API Proxy to secure
 
-1. Log into the Apigee Edge Management UI at [https://login.apigee.com](https://login.apigee.com). Navigate to  **Develop → API Proxies**, and select the API Proxy (labeled **{your_initials}**\_Hipster-Products-API) that you created in [Lab 1](../Lab%201).
+1. Log into the Apigee Edge Management UI at [Admin Portal](http://apiadmin.atodnet.gov.au). Navigate to  **Develop → API Proxies**, and select the API Proxy (labeled **{your_initials}**\_Hipster-Products-API) that you created in [Lab 1](../Lab%201).
 
-![image alt text](./media/image_1.png)
+![image alt text](./media/image_1_new.png)
 
 2. Verify that the API proxy is deployed to an environment from the **Overview** page.  Environment(s) to which the selected revision of the API proxy is deployed will be indicated by a green circle.  If it is not deployed, click an environment from the "Deployment" pull-down to deploy the API proxy to that environment.
 
-![image alt text](./media/image_2.png)
+![image alt text](./media/image_2_new.png)
 
 3. Verify that you can successfully make calls using the built-in trace tool.
 
@@ -135,14 +135,14 @@ For this lab, you will need an API proxy that is not currently secured.  If you 
 
            * Click the **Add a proxy** link
 
-           ![image alt text](./media/AddProductProxy.png)
+           ![image alt text](./media/AddProductProxy_new.png)
 
            * In the popup window, select the **API Proxy & path** radio button. Then select your Hipster Products API Proxy (with deployed revision), select the `/` option for Path, and click **Add**.
 
-           ![image alt text](./media/AddPath2.png)
+           ![image alt text](./media/AddPath2_new.png)
 
 3. **Save** the API Product.
-![image alt text](./media/SaveProduct.png)
+![image alt text](./media/SaveProduct_new.png)
 
 Note: We are adding the entire API Proxy to the API Product.  We can just as easily select one or more operations from one or more API proxies and bundle them together in an API Product.
 
@@ -164,7 +164,7 @@ Note: We are adding the entire API Proxy to the API Product.  We can just as eas
 
 3. Click **Create**
 
-![image alt text](./media/CreateDeveloper.png)
+![image alt text](./media/CreateDeveloper_new.png)
 
 4. Select **Publish → Apps** from the side navigation menu, and click the **+App** button.
 
@@ -182,19 +182,19 @@ Note: We are adding the entire API Proxy to the API Product.  We can just as eas
 
 	* Click the **Add Product** button.
 
-	![image alt text](./media/FillAppCreateFormAddProduct.png)
+	![image alt text](./media/FillAppCreateFormAddProduct_new.png)
 
 	* Select the API Product you previously created, and click **Add**.
 
-	![image alt text](./media/AddAppProduct.png)
+	![image alt text](./media/AddProductApp_new.png)
 
 6. Click the **Create** button to save.
 
-	![image alt text](./media/AppCreateBtn.png)
+	![image alt text](./media/AddProductApp_new.png)
 
 7. Once created, you will then see that Apigee has generated an API Key and Secret pair for the App. Click on the 'Show' link next to the Key, and **copy this API Key**.
 
-![image alt text](./media/CopyAPIKey.png)
+![image alt text](./media/CopyAPIKey_new.png)
 
 You can now use this API Key to make a valid API request to your API Proxy.
 
