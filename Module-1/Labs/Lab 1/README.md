@@ -15,9 +15,7 @@ On Apigee, the API Proxy is also where runtime policy configuration is applied f
 
 ![Image of Apigee Proxy flow execution order](./media/ProxyToBackendWithFlows_v3.png)
 
-Apigee also supports the [**OpenAPI specification**](https://github.com/OAI/OpenAPI-Specification) out of the box, allowing you to auto-generate API Proxies. Apigee has a built-in OpenAPI specification editor and store which you can use to design and maintain your OpenAPI specifications.
-
-![Image of Apigee OpenAPI Spec editor](./media/OASEditor.png)
+Apigee also supports the [**OpenAPI specification**](https://github.com/OAI/OpenAPI-Specification) out of the box, allowing you to auto-generate API Proxies. 
 
 In this lab, we will learn how to
 * design an OpenAPI specification for an existing HTTP service and store it within the Apigee platform, and
@@ -26,13 +24,11 @@ In this lab, we will learn how to
 # Pre-requisites
 
 * Basic understanding of [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification) (FKA: Swagger)
-* Access to an HTTP client to test the API (eg. cURL, Postman, etc.). If you do not have access to one, you can use the [Apigee Trace Tool](https://docs.apigee.com/api-platform/debug/using-trace-tool-0) or the [Apigee REST client](https://apigee-restclient.appspot.com/).
+* Access to an HTTP client to test the API (eg. cURL, Postman, Fiddler etc.). If you do not have access to one, you can use the [Apigee Trace Tool](https://docs.apigee.com/api-platform/debug/using-trace-tool-0).
 
 # Instructions
 
 **Note: During this workshop, as you may be working within an [Apigee Organization (Org)](https://docs.apigee.com/api-platform/fundamentals/apigee-edge-organization-structure) that is shared by multiple users.  Please prefix all asset names within the Org with your initials. For example, Spec name = {your-initials}\_{spec name}, API proxy name = {your-initials}\_{proxy name}, etc.**
-
-
 
 ## Create an API Proxy
 
@@ -46,13 +42,13 @@ In this lab, we will learn how to
 
 3. Select **Reverse proxy**, Click on **Use OpenAPI** below reverse proxy option.
 
-![Image showing selection of API Proxy type.  User has selected Reverse Proxy and clicked "Use OpenAPI Spec"](./media/image_7.png)
+![Image showing selection of API Proxy type.  User has selected Reverse Proxy and clicked "Use OpenAPI Spec"](./media/image_7_new.png)
 
 4. Add https://raw.githubusercontent.com/ajaymahale/apijam/master/Module-1/Resources/products-catalog-spec.yaml to the textbox to enter the OAS 
 
-![Image showing selection of previously imported OpenAPI Spec from list of available specs.](./media/image_8.png)
+![Image showing selection of OpenAPI Spec from list from a url](./media/image_8.png)
 
-5. Enter details in the proxy wizard. Replace **{your-initials}** with the initials of your name.
+1. Enter details in the proxy wizard. Replace **{your-initials}** with the initials of your name.
 
     * Proxy Name: **{your_initials}**\_Hipster-Products-API
 
@@ -60,29 +56,31 @@ In this lab, we will learn how to
 
     * Existing API: Observe the field value which is auto filled from OpenAPI Spec.
 
-![Image showing filling out of Proxy details.  User has added his or her initials as the prefix for "Name" and "Base path" per lab instructions.](./media/image_10.png)
+![Image showing filling out of Proxy details.  User has added his or her initials as the prefix for "Name" and "Base path" per lab instructions.](./media/image_10_new.png)
 
 6. Verify the values and click **Next**.
 
-7. Select **Pass through (none)** for the authorization in order to choose not to apply any security policy for the proxy. Click Next.
+7. You can select which API resources, from the list configured in the OpenAPI Spec, should be exposed. Select all & Click on **Next**
 
-![Image describing Policy selection in API Proxy Wizard.  User has selected "Pass through".](./media/image_12.png)
+![Image describing ability to select or deselect individual operations impoted from OpenAPI Spec.  User has selected the default, which is all operations.](./media/image_11_new.png)
 
-8. You can select which API resources, from the list configured in the OpenAPI Spec, should be exposed. Select all & Click on **Next**
+8. Select **Pass through (none)** for the authorization in order to choose not to apply any security policy for the proxy. Click Next.
 
-![Image describing ability to select or deselect individual operations impoted from OpenAPI Spec.  User has selected the default, which is all operations.](./media/image_11.png)
+![Image describing Policy selection in API Proxy Wizard.  User has selected "Pass through".](./media/image_12_new.png)
+
+
 
 9. Go with the **secure Virtual Host** configuration. Ensure that the **default** one is unchecked.
 
-![Image describing how to enable or disable the http and/or https virtual hosts.  User has unchecked "default" so only secure (https) is checked.](./media/image_13.png)
+![Image describing how to enable or disable the http and/or https virtual hosts.  User has unchecked "default" so only secure (https) is checked.](./media/image_13_new.png)
 
 10. Ensure that only the **test** environment is selected to deploy to and click **Create and Deploy**
 
-![Image describing selection of which environments to deploy API Proxy to via the wizard.  User has sselected "test" and left other environments unchecked.](./media/image_14.png)
+![Image describing selection of which environments to deploy API Proxy to via the wizard.  User has sselected "test" and left other environments unchecked.](./media/image_14_new.png)
 
 11. Once the API proxy is created and deployed click **Edit Proxy** to view your proxy in the proxy editor.
 
-![Image describing completion of wizard.  There is an "Edit proxy" button that will open the newly created proxy in the proxy editor.](./media/image_15.png)
+![Image describing completion of wizard.  There is an "Edit proxy" button that will open the newly created proxy in the proxy editor.](./media/image_15_new.png)
 
 12. *Congratulations!* ...You have now built a reverse proxy for an existing backend service. You should see the proxy **Overview** tab.
 
@@ -94,7 +92,7 @@ Let us test the newly built API proxy. You can use any HTTP client like cURL or 
 ### Using cURL
 
 ```
-curl -X GET "http://apiptb.devtest.atohdtnet.gov.au/{{your initials}}_hipster-products-api/products"
+curl -X GET "http://apiptb.devtest.atohdtnet.gov.au/v1/{{your initials}}_hipster-products-api/products"
 ```
 
 ### Using Trace Tool:
