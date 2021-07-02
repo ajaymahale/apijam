@@ -34,12 +34,12 @@ If you are attending a Virtual Session if you are stuck, please
 ### [Api Jam - DSG security deep dive (1:00 pm - 2:00 pm)](./Module-2a) 
 * Introduction to API Security
 * Lab 1 - Throttle your API Traffic to prevent DoS, using Apigee Spike Arrest
-* Lab 2 - DSG security deep dive
+* Lab 2 - DSG security exercise
 
 ** **
 
-### [Discovery on project API e.g. MBR (2:00 pm - 3:00 pm)](#)
-* Whiteboard design and discussions on APIs you intend to onboard onto the DSG
+### [Discovery on project API (2:00 pm - 3:00 pm)](#)
+* Discussions on APIs you intend to onboard onto the DSG
 
 ** **
 
