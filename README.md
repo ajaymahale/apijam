@@ -2,7 +2,12 @@
 
 The original content has been borrowed from Googles API Jam repository on github.
 
-These labs and the supporting material were intended to be run on the Apigee Cloud Platform. We will be running them in the Private Cloud Apigee Installation. There will be minor cosmetic and feature differences you will find while running the labs like the screenshots provided in the content vs what you see on screen will have slight variations. Feel free to catch an instructor if you get stuck.
+These labs and the supporting material were intended to be run on the DSG  Platform. We will be running them in the Private Cloud Apigee Installation. There will be minor cosmetic and feature differences you will find while running the labs like the screenshots provided in the content vs what you see on screen will have slight variations. Feel free to catch an instructor if you get stuck.
+
+If you are attending a Virtual Session if you are stuck, please 
+* Use the chat room to express the issue you are facing. Someone in the chat room might help answer your questions.
+* If you need further assistance, Direct Message one of the instructors, and invite them to a your webex room. 
+* You could then screen share and the instructor will try and debug the issue with you. 
 
 ## Agenda
 
@@ -22,8 +27,7 @@ These labs and the supporting material were intended to be run on the Apigee Clo
 
 ** **
 
-### [Lunch + Architecture Conversations (12:00 pm - 1:00 pm)](#)
-* Pick the brains of Apigee experts from Google while enjoying lunch
+### [Lunch (12:00 pm - 1:00 pm)](#)
 
 ** ** 
 
