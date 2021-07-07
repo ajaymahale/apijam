@@ -67,7 +67,7 @@ A JSON Web Token is a proposed Internet standard for creating data with optional
 
 ![image alt text](./media/image_10_a.png)
 
-7. Drag and drop the Extract-Variables policy so it is before the Product Quota policy
+7. Drag and drop the Extract-Variables policy so it is before the spike arrest policy
 
 ![image alt text](./media/image_10_b.png)
 
@@ -83,7 +83,7 @@ A JSON Web Token is a proposed Internet standard for creating data with optional
     </Header>
 </ExtractVariables>
 ```
-10. Drag and drop the VerifyJWT policy so it on the right of the Extract-Variables policy and before the Product Quota Policy.
+10. Drag and drop the VerifyJWT policy so it on the right of the Extract-Variables policy and before the spike arrest Policy.
 
 ![image alt text](./media/image_11.png)
 
@@ -131,12 +131,11 @@ A JSON Web Token is a proposed Internet standard for creating data with optional
 ```
 $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
 $headers.Add("Authorization", "Bearer [your_jwt_token]")
-$response = Invoke-RestMethod 'http://apiptb.devtest.atohdtnet.gov.au/[your_initials]-hipster-products-api/products?apikey=[your_apikey]' -Method 'GET' -Headers $headers
+$response = Invoke-RestMethod 'http://apiptb.devtest.atohdtnet.gov.au/[your_initials]-hipster-products-api/products' -Method 'GET' -Headers $headers
 $response | ConvertTo-Json
 ```
 
 Copy the avobe code into a new file ,you will need to replace the relevant parameters:
-- Valid api key as generated in previous labs
 - Url to your proxy 
 - JWT token generated in section 1 of this lab
 
