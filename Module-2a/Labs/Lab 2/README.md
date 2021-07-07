@@ -24,11 +24,11 @@ When using the Verify JWS/JWT policy, an invalid JWS/JWT will be rejected and wi
 
 As part of this lab, you will:
 - Generate a Sample JWT token 
-- Create a Request using yoru REST Client (Postman, Curl or similar) with an authorization Header containig the JWT token
+- Create a Request using yoru REST Client (Postman, Curl, Powershell or similar) with an authorization Header containig the JWT token
 - Secure the sample Hipster Products API with an JWT token verification policy. 
 
 ## Generate a JWT token
-A JSON Web Token is a proposed Internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some number of claims. The tokens are signed either using a private secret or a public/private key pair., fr the purposes of thsi labs we will be using a public/private key pair for verification purposes. we will be using a free online tool that will help us generate and sign a JWT token that is then going to be validated by our proxy.
+A JSON Web Token is a proposed Internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some number of claims. The tokens are signed either using a private secret or a public/private key pair. for this labs we will be using a public/private key pair for verification purposes. We will be using a free online tool that will help us generate and sign a JWT token that is then going to be validated by our proxy.
 
 
 1. Visit the following url https://dinochiesa.github.io/jwt/ 
@@ -75,7 +75,7 @@ A JSON Web Token is a proposed Internet standard for creating data with optional
 
 ![image alt text](./media/image_10_c.png)
 
-9. replace the poicy xml code with the following: 
+9. Replace the poicy xml code with the following: 
 ```xml
 <ExtractVariables>
    <Headername="Authorization">
@@ -83,7 +83,7 @@ A JSON Web Token is a proposed Internet standard for creating data with optional
     </Header>
 </ExtractVariables>
 ```
-10. Drag and drop the VerifyJWT policy so it on the right of the Extract-Variables policy and before the spike arrest Policy.
+10. Drag and drop the VerifyJWT policy so it on the right of the Extract-Variables policy and before the spike arrest policy.
 
 ![image alt text](./media/image_11.png)
 
@@ -106,7 +106,7 @@ A JSON Web Token is a proposed Internet standard for creating data with optional
     ```
     replace `[public_key]` with the value of the public key in the public/private pair you used in the [first section](#publickey)  of this lab to generate the JWT token.
 
-12. Cick on **Save**. After the proxy is saved, click the Trace tab in the upper right:
+12. Cick on **Save**. After the proxy is saved, click the **Trace** tab in the upper right:
 
 ![image alt text](./media/image_11_a.png)
 
@@ -139,14 +139,16 @@ Copy the avobe code into a new file ,you will need to replace the relevant param
 - Url to your proxy 
 - JWT token generated in section 1 of this lab
 
-save this file with a .ps1 extendion and execute from a powershell console.
+Save this file with a .ps1 extendion and execute from a powershell console.
 
 14. As you execute the requests you should see them being traced inside of Apigees Trace Session Screen.
 
 ![image alt text](./media/image_12_b.png)
 
-if everything goes well you should get a 200 response and a list of products .Try to modify your tocken to observe the policy rejecting the token.
+If everything goes well you should get a 200 response and a list of products .Try to modify your token to make it invalid and in that way observe the policy rejecting the token.
 
 ## Bonus Points
 
 Try to add specific claims to your JWT Token and modify your JWT verification Policy to validate this claims. refer to [Step 2](#publickey) in the first section.
+
+Full documentation on how the JWT-Verification pilicy works can be found [Here](https://docs.apigee.com/api-platform/reference/policies/verify-jwt-policy)
