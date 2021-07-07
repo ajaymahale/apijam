@@ -1,4 +1,4 @@
-# API Security : DSG Security and Authentication Worlflow
+# JWT Based Security Excersice
 
 *Duration : 30 mins*
 

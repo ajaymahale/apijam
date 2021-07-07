@@ -15,7 +15,7 @@ This workshop will be valuable to API developers, architects, and anyone who wan
 ### Module 2a
 * Introduction to API Security
 * Lab 1 - Throttle your API Traffic to prevent DoS, using Apigee Spike Arrest [Link](./Labs/Lab%201)
-* Lab 2 - API Security : DSG Security and Authentication Worlflow [Link](./Labs/Lab%202)
+* Lab 2 - JWT Based Security Excersice [Link](./Labs/Lab%202)
 
 Let's get started with [Lab 1](./Labs/Lab%201).
 
