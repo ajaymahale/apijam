@@ -60,25 +60,6 @@ Hit **Save**.
 
 Your API proxy should now include configurations to support CORS processing.
 
-## Update the Open API Spec
-
-In order to ensure that we have an updated OpenAPI Spec that accurately describes the API endpoint exposed through our API Proxy, we must first modify the spec - specifically the `host`, `basepath`, `securityDefinitions` and `security` properties. Open your spec yaml file and change to:
-
-    host: {{your API proxy host}}
-    basePath: /v1/{{your initials}}_hipster-products-api
-    securityDefinitions:
-      APIKeyQuery:
-        type: "apiKey"
-        in: "query"
-        name: "apikey"
-    security:
-      - APIKeyQuery: []
-    schemes:
-      - https
-
-  Where {{your API proxy host}} = {{your org}}-{{environment}}.apigee.net, in Apigee Trial orgs
-
-  ![image alt text](./media/EditSpec.png)
 
 ## Create a Catalog Item in the Developer Portal
 

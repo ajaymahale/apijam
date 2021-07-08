@@ -54,13 +54,15 @@ In this lab, we will learn how to
 
     * Proxy Base Path: /v1/**{your_initials}**\_hipster-products-api
 
-    * Existing API: Observe the field value which is auto filled from OpenAPI Spec.
 
 ![Image showing filling out of Proxy details.  User has added his or her initials as the prefix for "Name" and "Base path" per lab instructions.](./media/image_10_new.png)
 
 6. Verify the values and click **Next**.
 
 7. You can select which API resources, from the list configured in the OpenAPI Spec, should be exposed. Select all & Click on **Next**
+
+    * Existing API: Observe the field value which is auto filled from OpenAPI Spec.
+
 
 ![Image describing ability to select or deselect individual operations impoted from OpenAPI Spec.  User has selected the default, which is all operations.](./media/image_11_new.png)
 
@@ -70,7 +72,7 @@ In this lab, we will learn how to
 
 
 
-9. Go with the **secure Virtual Host** configuration. Ensure that the **default** one is unchecked.
+9. Ensure that the **default** one is checked.
 
 ![Image describing how to enable or disable the http and/or https virtual hosts.  User has unchecked "default" so only secure (https) is checked.](./media/image_13_new.png)
 
@@ -89,11 +91,6 @@ In this lab, we will learn how to
 ## Test the API Proxy
 Let us test the newly built API proxy. You can use any HTTP client like cURL or Postman, or the [Apigee Trace Tool](https://docs.apigee.com/api-platform/debug/using-trace-tool-0).
 
-### Using cURL
-
-```
-curl -X GET "http://apiptb.devtest.atohdtnet.gov.au/v1/{{your initials}}_hipster-products-api/products"
-```
 
 ### Using Trace Tool:
 
@@ -116,6 +113,14 @@ curl -X GET "http://apiptb.devtest.atohdtnet.gov.au/v1/{{your initials}}_hipster
 * You will see that the API proxy recieved the request and sent back a HTTP status 200 response which was logged by the Trace session. You can click on the step shown below to view the response body.
 
 ![Image depicting a successful trace response.  Left pane shows the HTTP method, status code, invoked URI, and elapsed response time.  User has also clicked a node in the visual transaction map that reveals the JSON response received from the server.](./media/trace-tool-response.png)
+
+
+### Using cURL(Optional)
+To test the get call with an http client like cUrl
+
+```
+curl -X GET "http://apiptb.devtest.atohdtnet.gov.au/v1/{{your initials}}_hipster-products-api/products"
+```
 
 
 ## Save the API Proxy
