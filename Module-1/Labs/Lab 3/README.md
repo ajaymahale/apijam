@@ -2,6 +2,8 @@
 
 #### ***The screenshots are taken from the Apigee Cloud version and may differ slightly from what you see in your installation within the organisation. All concepts remain the same.***
 
+# What will be covered in this lab?
+In this lab you will create 3 products aligned with your API product strategy to offer a tiered model and have different quotas attached to each product. We will also understand how Quotas can be set on different products and how they are enabled/enforced.
 
 #
 Duration : 15 mins
@@ -54,13 +56,13 @@ In this lab we will create different API products that bundle the same API Proxy
 
         * Quota: **5** requests every **1 Minute**
 
-    * Section: API resources
+    ##### * Section: API resources
 
         * Click the **Add a proxy** link
 
 ![image alt text](media/image_2.png)
 
-* Select **{yourInitials}_Hipster-Products-API Proxy** and click **Add**
+##### * Select **{yourInitials}_Hipster-Products-API Proxy** and click **Add**
 
 ![image alt text](media/image_3.png)
 
@@ -74,7 +76,7 @@ We now create 2 similar products that represent our Silver and Gold Products wit
 
 * Click **+API Product**
 
-* For the **Silver Product** populate the following fields
+##### * For the **Silver Product** populate the following fields
 
     * Section: Product details
 
@@ -96,7 +98,7 @@ We now create 2 similar products that represent our Silver and Gold Products wit
 
         * Select **{yourInitials}_Hipster-Products-API Proxy** and click **Add**
 
-* For the **Gold Product** populate the following fields
+##### * For the **Gold Product** populate the following fields
 
     * Section: Product details
 
@@ -126,7 +128,7 @@ Now we should end up with 3 API Products resembling our Product tier strategy.
 
 * Select **Publish → Apps**
 
-* Click **+API Product**
+##### * Click **+API Product**
 
 ![image alt text](media/image_5.png)
 
@@ -160,7 +162,7 @@ Now we should end up with 3 API Products resembling our Product tier strategy.
 
 Repeat the process for the Apps that use the Silver and Gold tier as well, with using these values:
 
-* App using the Silver API Product
+##### * App using the Silver API Product
 
     * Section: App Details
 
@@ -176,7 +178,7 @@ Repeat the process for the Apps that use the Silver and Gold tier as well, with 
 
         * Select **Hipster Product API Product Silver** and click **Add**
 
-* App using the Gold API Product
+##### * App using the Gold API Product
 
     * Section: App Details
 
@@ -200,17 +202,17 @@ You should end up with three Apps with three different API keys, that you have n
 
 As stated, quotas are only enforced by adding a Quota Policy into your API Proxy. With the configuration of the Quota fields in the API Product, when an API call is made that presents a valid API key, Apigee will automatically fetch the associated API Product's metadata (including the Quota fields), which become available to be dynamically referenced by a quota (or any other) policy.
 
-1. Click on **Develop → API Proxies** from side navigation menu. Open the existing API Proxy from the prerequisites.
+##### 1. Click on **Develop → API Proxies** from side navigation menu. Open the existing API Proxy from the prerequisites.
 
-2. Verify that the policy for Verify API Key exists with the proper name. Click on the **Policy Name** and look at the XML configuration below.
+##### 2. Verify that the policy for Verify API Key exists with the proper name. Click on the **Policy Name** and look at the XML configuration below.
 
 ![image alt text](media/image_11.png)
 
-3. Click **PreFlow** and **+ Step** to add a new policy
+##### 3. Click **PreFlow** and **+ Step** to add a new policy
 
 ![image alt text](media/image_12.png)
 
-4. Click **Quota** Policy and Populate the following fields
+##### 4. Click **Quota** Policy and Populate the following fields
 
     1. **Display Name:** QU-ProductQuota
 
@@ -218,7 +220,7 @@ Click **Add** to add the policy to your flow.
 
 ![image alt text](media/image_13.png)
 
-5. With the VerifyAPIKey policy that we have configured in our prerequisites **Verify-API-Key**, the following variables are populated after verification of an API key that has an API product with the quota fields set as 3 requests per 1 second:
+##### 5. With the VerifyAPIKey policy that we have configured in our prerequisites **Verify-API-Key**, the following variables are populated after verification of an API key that has an API product with the quota fields set as 3 requests per 1 second:
 
 * verifyapikey.Verify-API-Key.apiproduct.developer.quota.limit = 3
 * verifyapikey.Verify-API-Key.apiproduct.developer.quota.interval = 1
@@ -246,7 +248,7 @@ The next step then is to set the **QU-ProductQuota** Quota policy to reference t
 
 Note: If the field is not set in the API product, this would allow a default of 3 calls per minute
 
-6. Click on **Save** after you have changed the policy in the previous step
+##### 6. Click on **Save** after you have changed the policy in the previous step
 
 ![image alt text](media/image_15.png)
 
@@ -264,7 +266,7 @@ Go to the API proxy and enter the trace tab so we can run some tests:
 
 ![image alt text](media/image_16.png)
 
-* After 6 calls we see that our free quota of 5 calls is exceeded and the quota policy shows a red exclamation mark sign
+##### * After 6 calls we see that our free quota of 5 calls is exceeded and the quota policy shows a red exclamation mark sign
 
 ![image alt text](media/image_17.png)
 
