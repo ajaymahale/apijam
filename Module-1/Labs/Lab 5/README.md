@@ -220,41 +220,7 @@ Now we see the traffic split by Apps. This helps us to identify apps that are ge
 
 You can also download the data as CSV by clicking the download button to the right.
 
-## Get Statistics via Management API
 
-Visit the Management API documentation where you can also conveniently try out API calls:
-
-[https://apidocs.apigee.com/management/apis/get/organizations/%7Borg_name%7D/environments/%7Benv_name%7D/stats/%7Bdimension_name%7D-0](https://apidocs.apigee.com/management/apis/get/organizations/%7Borg_name%7D/environments/%7Benv_name%7D/stats/%7Bdimension_name%7D-0)
-
-### Enter the values and execute an API call
-
-In the documentation you can interactively make calls to your organization to see how the results look like.
-
-* Enter your the API call data in the blue **Resource URL** fields:
-
-    * {org_name}: your organization
-
-    * {env_name}: your environment
-
-    * {dimension_name}: apiproxy
-
-* Fill in the data in the table:
-
-    * Select: sum(message_count)
-
-    * timeRange: 08/01/2019 00:00~08/30/2019 23:59
-
-    * Filter: (apiproxy eq 'weather-analytics')
-
-> Caution: Update Time Range accordingly to have the end range date in the present.
-
-* Authenticate with your Apigee username and password that you use to login into the Admin UI.
-
-* Send a request by clicking the **Send this request** button
-
-![image alt text](media/image_28.png)
-
-![image alt text](media/image_29.png)
 
 # Quiz
 
