@@ -150,10 +150,6 @@ Enter user : dis-ptb50@test.gov.au
 #### 4. Get access to your API Key + M2M credential
 ![image alt text](./media/image_306.PNG)
 
-# Lab Video
-
-If you would rather watch a video that covers this topic, point your browser [here](https://youtu.be/_gDpzDJPNQg).
-
 
 # Quiz
 
