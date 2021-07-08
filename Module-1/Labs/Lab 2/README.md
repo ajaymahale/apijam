@@ -1,11 +1,14 @@
 # Lab 2 - API Security and API Producer/Consumer Relationship on Apigee Edge
 
-*Duration : 20 mins*
+*Duration : 20-25 mins*
 
 *Persona : API Team*
 
 # What you will learn in this lab?
 In this lab you will learn how the relationship between API Proxies, API Products and Apps, helps obfuscate API production from API consumption; and how to protect your API proxy using the Verify API Key policy.  You then implemented the policy and tested it using the built-in Trace Tool
+
+## Context
+[Video Explaining the context](https://youtu.be/3nUFCOgGlS8)
 
 # Use case
 
@@ -42,7 +45,7 @@ For this lab, you will need an API proxy that is not currently secured.  If you 
 
 ## Choose and test the API Proxy to secure
 
-#### 1. Log into the Apigee Edge Management UI at [Admin Portal](http://apiadmin.atodnet.gov.au). Navigate to  **Develop → API Proxies**, and select the API Proxy (labeled **{your_initials}**\_Hipster-Products-API) that you created in [Lab 1](../Lab%201).
+#### 1. Log into the Apigee Edge Management UI at [Admin Portal](http://apiadmin.atodnet.gov.au). Navigate to  **Develop → API Proxies** on the left navigation, and select the API Proxy (labeled **{your_initials}**\_Hipster-Products-API) that you created in [Lab 1](../Lab%201).
 
 ![image alt text](./media/image_1_new.png)
 
