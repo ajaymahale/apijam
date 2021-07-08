@@ -92,7 +92,7 @@ Enter user : dis-ptb50@test.gov.au
 ##### 5. Create a new Api Catalog item and upload the [OAS spec](https://raw.githubusercontent.com/ajaymahale/apijam/master/Module-1/Resources/products-catalog-spec.yaml)
 ![image alt text](./media/image_109.png)
 
-##### 5. View how the catalog item would look on the developer portal
+##### 6. View how the catalog item would look on the developer portal
 ![image alt text](./media/image_110.png)
 
 
