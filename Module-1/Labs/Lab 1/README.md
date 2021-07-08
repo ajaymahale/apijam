@@ -162,8 +162,3 @@ That completes this hands-on lesson. In this simple lab you learned how to use A
 
 * Watch this "4 Minute Video 4 Developers" (4MV4D) on "Anatomy of an API Proxy" - [https://youtu.be/O5DJuCXXIRg](https://youtu.be/O5DJuCXXIRg)
 
-# Rate this lab
-
-How did you like this lab? Rate [here](https://goo.gl/forms/G8LAPkDWVNncR9iw2).
-
-Now go to [Lab-2](../Lab%202)

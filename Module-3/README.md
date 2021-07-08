@@ -29,5 +29,3 @@ Let's get started with [Lab 1](./Labs/Lab%201).
 
 #### Apigee Community 
 If you have any questions/comments please visit https://community.apigee.com/index.html
-
-##### This is not an official Google or Apigee product. This repository is used for educational/training purposes only.

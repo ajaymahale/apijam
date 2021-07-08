@@ -117,7 +117,7 @@ A JSON Web Token is a proposed Internet standard for creating data with optional
 
 ## Test JWT Verification Policy 
 
-##### Note: the following steps assume you are using postman as your rest client, different clients will have different ways of achieving the same result.
+#### Note: the following steps assume you are using postman as your rest client, different clients will have different ways of achieving the same result.
 
 9. Open up your Rst Client 
 

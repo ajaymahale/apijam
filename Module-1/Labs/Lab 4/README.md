@@ -41,9 +41,9 @@ CORS (Cross-origin resource sharing) is a standard mechanism that allows JavaScr
 
 In this step, we upload and deploy a version of your API proxy which includes configurations that support CORS, before it is published to a Developer Portal where it could be invoked within interactive docs pages. Typically, you would set these configurations up as described under "[Adding CORS support to an API proxy](https://docs.apigee.com/api-platform/develop/adding-cors-support-api-proxy)". However, in the interest of time, in this lab, we will make use of a pre-configured proxy revision instead.
 
-##### 1. Download [this revision](https://github.com/ajaymahale/apijam/raw/master/Module-1/Resources/Hipster-Products-API_With_CORS_Config_new3.zip) of the API proxy. This is a version of the same Hipster Products API that we have been working on so far, but with CORS configurations.
+#### 1. Download [this revision](https://github.com/ajaymahale/apijam/raw/master/Module-1/Resources/Hipster-Products-API_With_CORS_Config_new3.zip) of the API proxy. This is a version of the same Hipster Products API that we have been working on so far, but with CORS configurations.
 
-##### 2. Navigate to **API Proxies** and select your Hipster Product API proxy. Then click the **Project** button and select **Upload a New Revision**.
+#### 2. Navigate to **API Proxies** and select your Hipster Product API proxy. Then click the **Project** button and select **Upload a New Revision**.
 
 ![image alt text](./media/Click-upload-new-rev.png)
 
@@ -51,13 +51,13 @@ In the pop-up dialog, choose the previously downloaded revision of the API proxy
 
 ![image alt text](./media/Choose-downloaded-proxy-zip.png)
 
-##### 3. Once uploaded, in the latest revision of your API proxy, navigate to the **Proxy Endpoints** >> **default** XML, scroll down and change the `<BasePath>` node value to match your proxy's basepath.
+#### 3. Once uploaded, in the latest revision of your API proxy, navigate to the **Proxy Endpoints** >> **default** XML, scroll down and change the `<BasePath>` node value to match your proxy's basepath.
 
 ![image alt text](./media/Change-basepath-after-CORS-import.png)
 
 Hit **Save**.
 
-##### 4. Once saved, select the **Deployment** drop down and click on **test**, to undeploy the older revision and deploy the latest revision of the proxy to the test environment.
+#### 4. Once saved, select the **Deployment** drop down and click on **test**, to undeploy the older revision and deploy the latest revision of the proxy to the test environment.
 
 ![image alt text](./media/Deploy-proxy.png)
 
@@ -68,11 +68,11 @@ Your API proxy should now include configurations to support CORS processing.
 
 ## Create a Catalog Item in the Developer Portal
 
-##### 1. Navigate to the developer Portal(refer to emailed Getting Started sheet for urls) and Login as a content creator
+#### 1. Navigate to the developer Portal(refer to emailed Getting Started sheet for urls) and Login as a content creator
 
 ![image alt text](./media/image_101.png)
 
-##### 2. Login to the Portal as a content editor
+#### 2. Login to the Portal as a content editor
 ![image alt text](./media/image_102.png)
 ![image alt text](./media/image_103.png)
 
@@ -81,42 +81,42 @@ Enter user : dis-ptb50@test.gov.au
 ![image alt text](./media/image_105.png)
 
 
-##### 3. Click **Content**
+#### 3. Click **Content**
 
 ![image alt text](./media/image_106.png)
 
-##### 4. Click **Add Content** and then **API Doc**
+#### 4. Click **Add Content** and then **API Doc**
 ![image alt text](./media/image_107.png)
 ![image alt text](./media/image_108.png)
 
-##### 5. Create a new Api Catalog item and upload the [OAS spec](https://raw.githubusercontent.com/ajaymahale/apijam/master/Module-1/Resources/products-catalog-spec.yaml)
+#### 5. Create a new Api Catalog item and upload the [OAS spec](https://raw.githubusercontent.com/ajaymahale/apijam/master/Module-1/Resources/products-catalog-spec.yaml)
 ![image alt text](./media/image_109.png)
 
-##### 6. View how the catalog item would look on the developer portal
+#### 6. View how the catalog item would look on the developer portal
 ![image alt text](./media/image_110.png)
 
 
 
 ## Ensure that Bronze (Free) API Product is accessible as Public
 
-##### 1. Visit the Apigee Edge
-##### 2. Find your Bronze Api Product 
-##### 3. Ensure that it's access is public
+#### 1. Visit the Apigee Edge
+#### 2. Find your Bronze Api Product 
+#### 3. Ensure that it's access is public
 
 ![image alt text](./media/image_111.png)
 
 ## App Developer sign-up & Register Apps
 
-##### 1. Browse to the developer Portal
+#### 1. Browse to the developer Portal
 ![image alt text](./media/image_201.PNG)
 
-##### 2. Sign-in as a developer using login dis-ptb100@test.gov.au
+#### 2. Sign-in as a developer using login dis-ptb100@test.gov.au
 ![image alt text](./media/image_202.PNG)
 ![image alt text](./media/image_202_a.PNG)
 ![image alt text](./media/image_202b.PNG)
 ![image alt text](./media/image_202c.PNG)
 ![image alt text](./media/image_202d.PNG)
-##### 3. Create an App & Subscribe to your API Product
+#### 3. Create an App & Subscribe to your API Product
 ![image alt text](./media/image_204.PNG)
 ![image alt text](./media/image_204a.PNG)
 
@@ -129,11 +129,11 @@ Enter user : dis-ptb50@test.gov.au
 ### Create DSP(Team) App
 
 // TBD: This feature exists but is not covered in this lab. The DPO is responsible for onboarding DSPs(Teams) on to the platform. Ask your friendly neighborhood Terem instructor for more details or a demo.
-##### 1. Browse to the developer portal
+#### 1. Browse to the developer portal
 ![image alt text](./media/image_301.PNG)
 
 
-##### 2. Sign in as a DSP Team admin
+#### 2. Sign in as a DSP Team admin
 ![image alt text](./media/image_302.PNG)
 ![image alt text](./media/image_302_a.PNG)
 ![image alt text](./media/image_302b.PNG)
@@ -141,13 +141,13 @@ Enter user : dis-ptb50@test.gov.au
 ![image alt text](./media/image_302d.PNG)
 
 
-##### 3. Create an Team App & Subscribe to your API Product
+#### 3. Create an Team App & Subscribe to your API Product
 ![image alt text](./media/image_303.PNG)
 ![image alt text](./media/image_304.PNG)
 ![image alt text](./media/image_305.PNG)
 
 
-##### 4. Get access to your API Key + M2M credential
+#### 4. Get access to your API Key + M2M credential
 ![image alt text](./media/image_306.PNG)
 
 # Lab Video

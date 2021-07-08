@@ -202,17 +202,17 @@ You should end up with three Apps with three different API keys, that you have n
 
 As stated, quotas are only enforced by adding a Quota Policy into your API Proxy. With the configuration of the Quota fields in the API Product, when an API call is made that presents a valid API key, Apigee will automatically fetch the associated API Product's metadata (including the Quota fields), which become available to be dynamically referenced by a quota (or any other) policy.
 
-##### 1. Click on **Develop → API Proxies** from side navigation menu. Open the existing API Proxy from the prerequisites.
+#### 1. Click on **Develop → API Proxies** from side navigation menu. Open the existing API Proxy from the prerequisites.
 
-##### 2. Verify that the policy for Verify API Key exists with the proper name. Click on the **Policy Name** and look at the XML configuration below.
+#### 2. Verify that the policy for Verify API Key exists with the proper name. Click on the **Policy Name** and look at the XML configuration below.
 
 ![image alt text](media/image_11.png)
 
-##### 3. Click **PreFlow** and **+ Step** to add a new policy
+#### 3. Click **PreFlow** and **+ Step** to add a new policy
 
 ![image alt text](media/image_12.png)
 
-##### 4. Click **Quota** Policy and Populate the following fields
+#### 4. Click **Quota** Policy and Populate the following fields
 
     1. **Display Name:** QU-ProductQuota
 
@@ -220,7 +220,7 @@ Click **Add** to add the policy to your flow.
 
 ![image alt text](media/image_13.png)
 
-##### 5. With the VerifyAPIKey policy that we have configured in our prerequisites **Verify-API-Key**, the following variables are populated after verification of an API key that has an API product with the quota fields set as 3 requests per 1 second:
+#### 5. With the VerifyAPIKey policy that we have configured in our prerequisites **Verify-API-Key**, the following variables are populated after verification of an API key that has an API product with the quota fields set as 3 requests per 1 second:
 
 * verifyapikey.Verify-API-Key.apiproduct.developer.quota.limit = 3
 * verifyapikey.Verify-API-Key.apiproduct.developer.quota.interval = 1
@@ -248,7 +248,7 @@ The next step then is to set the **QU-ProductQuota** Quota policy to reference t
 
 Note: If the field is not set in the API product, this would allow a default of 3 calls per minute
 
-##### 6. Click on **Save** after you have changed the policy in the previous step
+#### 6. Click on **Save** after you have changed the policy in the previous step
 
 ![image alt text](media/image_15.png)
 

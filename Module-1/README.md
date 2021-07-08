@@ -19,4 +19,3 @@ You can start with the first lab [1. API Design - Design & Create an API Proxy w
 #### Apigee Community 
 If you have any questions/comments please visit https://community.apigee.com/index.html
 
-##### This repository is not an official Google or Apigee product. This repository is used for educational/training purposes only.
