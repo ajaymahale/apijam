@@ -101,7 +101,7 @@ Let us test the newly built API proxy. You can use any HTTP client like cURL or 
 
 * Ensure that the deployed API revision is selected.
 
-##### * Hit **Start Trace Session**.
+* Hit **Start Trace Session**.
 
 ![Image describing the API Proxy Trace Tool.  User has selected revision 1 to trace and then clicked the button labeled "Start Trace Session"](./media/trace-tool-start.png)
 
@@ -109,11 +109,11 @@ Let us test the newly built API proxy. You can use any HTTP client like cURL or 
 
 * Modify the URL to send to a valid API resource - **append a '/products' to the end of the URL.**
 
-##### * Hit 'Send'.
+* Hit 'Send'.
 
 ![Image describing invoking the trace tool.  User appended "/products" to the URL and clicked  the "send" button.](./media/trace-tool-send.png)
 
-##### * You will see that the API proxy recieved the request and sent back a HTTP status 200 response which was logged by the Trace session. You can click on the step shown below to view the response body.
+* You will see that the API proxy recieved the request and sent back a HTTP status 200 response which was logged by the Trace session. You can click on the step shown below to view the response body.
 
 ![Image depicting a successful trace response.  Left pane shows the HTTP method, status code, invoked URI, and elapsed response time.  User has also clicked a node in the visual transaction map that reveals the JSON response received from the server.](./media/trace-tool-response.png)
 
