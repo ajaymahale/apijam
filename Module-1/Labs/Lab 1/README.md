@@ -7,6 +7,7 @@
 # What does this lab cover ?
 In this simple lab you will learn how to use Apigee to proxy an existing backend using an OpenAPI Specification and the Apigee proxy wizard.
 
+## Context
   [Watch this Video on 
   "Anatomy of an API Proxy"](https://youtu.be/O5DJuCXXIRg) - https://youtu.be/O5DJuCXXIRg
 
