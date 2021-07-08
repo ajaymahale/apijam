@@ -175,21 +175,21 @@ Note: We are adding the entire API Proxy to the API Product.  We can just as eas
 
 ##### 5. Populate the following details:
 
-	* Name: `{{your initials}}_Hipster-Products-App`
+* Name: `{{your initials}}_Hipster-Products-App`
 
-	* Disaplay Name: `{{your initials}}_Hipster Products App`
+* Disaplay Name: `{{your initials}}_Hipster Products App`
 
-	* Select the `Developer` radial option.
+* Select the `Developer` radial option.
 
-	* Select the developer you previously created.
+* Select the developer you previously created.
 
-	* Click the **Add Product** button.
+* Click the **Add Product** button.
 
-	![image alt text](./media/FillAppCreateFormAddProduct_new.png)
+![image alt text](./media/FillAppCreateFormAddProduct_new.png)
 
-	* Select the API Product you previously created, and click **Add**.
+* Select the API Product you previously created, and click **Add**.
 
-	![image alt text](./media/AddProductApp_new.png)
+![image alt text](./media/AddProductApp_new.png)
 
 ##### 6. Click the **Create** button to save.
 
