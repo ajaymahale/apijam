@@ -231,9 +231,5 @@ In this lab you learned how the relationship between API Proxies, API Products a
 
     * Verify Api Key Policy [https://docs.apigee.com/api-platform/reference/policies/verify-api-key-policy](https://docs.apigee.com/api-platform/reference/policies/verify-api-key-policy)
 
-# Rate this lab
 
-How did you like this lab? Rate [here](https://goo.gl/forms/XxDqVtWHnyFdEChv1).
-
-Now go to [Lab-3](../Lab%203)
 

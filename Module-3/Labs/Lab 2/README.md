@@ -277,8 +277,4 @@ That completes this hands-on lesson. In this simple lab you learned how to creat
     * Best practices for API proxy design and development - [https://docs.apigee.com/api-platform/fundamentals/best-practices-api-proxy-design-and-development#servicecallouts](https://docs.apigee.com/api-platform/fundamentals/best-practices-api-proxy-design-and-development#servicecallouts) 
 
 
-# Rate this lab
 
-How did you like this lab? Rate [here](https://goo.gl/forms/G8LAPkDWVNncR9iw2).
-
-Now go to [Lab-3](../Lab%203)

@@ -171,8 +171,3 @@ You’ve learned how to do the following:
 
 * Use the Developer Portal UI to browse the OpenApi Specification Snapshot as a developer.
 
-# Rate this lab
-
-How did you link this lab? Rate [here](https://goo.gl/forms/j33WG2U0NFf02QHi1).
-
-Now go to [Lab-5](../Lab%205)

@@ -1,11 +1,15 @@
 # Lab 1 - Design & Create an API Proxy with OpenAPI Specification
 
-*Duration : 15 mins*
+*Duration : 15-20 mins*
 
 *Persona : API Team*
 
 # What does this lab cover ?
 In this simple lab you will learn how to use Apigee to proxy an existing backend using an OpenAPI Specification and the Apigee proxy wizard.
+
+  [Watch this Video on 
+  "Anatomy of an API Proxy"](https://youtu.be/O5DJuCXXIRg) - https://youtu.be/O5DJuCXXIRg
+
 
 # Use case
 

@@ -186,8 +186,3 @@ That completes this hands-on lesson. In this lab you learned how to create an Ex
     * Extensions Reference - [https://docs.apigee.com/api-platform/reference/extensions/reference-overview-extensions](https://docs.apigee.com/api-platform/reference/extensions/reference-overview-extensions) 
 
 
-# Rate this lab
-
-How did you like this lab? Rate [here](https://goo.gl/forms/G8LAPkDWVNncR9iw2).
-
-Now go to [Module-4](https://github.com/apigee/apijam/tree/master/Module-4)
