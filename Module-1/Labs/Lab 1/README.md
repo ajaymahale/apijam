@@ -35,23 +35,23 @@ In this lab, we will learn how to
 
 ## Create an API Proxy
 
-##### 1. It’s time to create Apigee API Proxy from an OpenAPI Specification. Click on **Develop → API Proxies** from side navigation menu.
+#### 1. It’s time to create Apigee API Proxy from an OpenAPI Specification. Click on **Develop → API Proxies** from side navigation menu.
 
 ![Image describing how to navigate to the API Proxies view.  Home - Develop - API Proxies](./media/image_5.png)
 
-##### 2. Click **+Proxy** The Build a Proxy wizard is invoked.
+#### 2. Click **+Proxy** The Build a Proxy wizard is invoked.
 
 ![Image showing the location of the button to create an API Proxy.](./media/image_6.png)
 
-##### 3. Select **Reverse proxy**, Click on **Use OpenAPI** below reverse proxy option.
+#### 3. Select **Reverse proxy**, Click on **Use OpenAPI** below reverse proxy option.
 
 ![Image showing selection of API Proxy type.  User has selected Reverse Proxy and clicked "Use OpenAPI Spec"](./media/image_7_new.png)
 
-##### 4. Add https://raw.githubusercontent.com/ajaymahale/apijam/master/Module-1/Resources/products-catalog-spec.yaml to the textbox to enter the OAS 
+#### 4. Add https://raw.githubusercontent.com/ajaymahale/apijam/master/Module-1/Resources/products-catalog-spec.yaml to the textbox to enter the OAS 
 
 ![Image showing selection of OpenAPI Spec from list from a url](./media/image_8.png)
 
-##### 6. Enter details in the proxy wizard. Replace **{your-initials}** with the initials of your name.
+#### 6. Enter details in the proxy wizard. Replace **{your-initials}** with the initials of your name.
 
     * Proxy Name: **{your_initials}**\_Hipster-Products-API
 
@@ -60,34 +60,34 @@ In this lab, we will learn how to
 
 ![Image showing filling out of Proxy details.  User has added his or her initials as the prefix for "Name" and "Base path" per lab instructions.](./media/image_10_new.png)
 
-##### 7. Verify the values and click **Next**.
+#### 7. Verify the values and click **Next**.
 
-##### 8. You can select which API resources, from the list configured in the OpenAPI Spec, should be exposed. Select all & Click on **Next**
+#### 8. You can select which API resources, from the list configured in the OpenAPI Spec, should be exposed. Select all & Click on **Next**
 
     * Existing API: Observe the field value which is auto filled from OpenAPI Spec.
 
 
 ![Image describing ability to select or deselect individual operations impoted from OpenAPI Spec.  User has selected the default, which is all operations.](./media/image_11_new.png)
 
-##### 9. Select **Pass through (none)** for the authorization in order to choose not to apply any security policy for the proxy. Click Next.
+#### 9. Select **Pass through (none)** for the authorization in order to choose not to apply any security policy for the proxy. Click Next.
 
 ![Image describing Policy selection in API Proxy Wizard.  User has selected "Pass through".](./media/image_12_new.png)
 
 
 
-##### 10. Ensure that the **default** one is checked.
+#### 10. Ensure that the **default** one is checked.
 
 ![Image describing how to enable or disable the http and/or https virtual hosts.  User has unchecked "default" so only secure (https) is checked.](./media/image_13_new.png)
 
-##### 11. Ensure that only the **test** environment is selected to deploy to and click **Create and Deploy**
+#### 11. Ensure that only the **test** environment is selected to deploy to and click **Create and Deploy**
 
 ![Image describing selection of which environments to deploy API Proxy to via the wizard.  User has sselected "test" and left other environments unchecked.](./media/image_14_new.png)
 
-##### 12. Once the API proxy is created and deployed click **Edit Proxy** to view your proxy in the proxy editor.
+#### 12. Once the API proxy is created and deployed click **Edit Proxy** to view your proxy in the proxy editor.
 
 ![Image describing completion of wizard.  There is an "Edit proxy" button that will open the newly created proxy in the proxy editor.](./media/image_15_new.png)
 
-##### 13. *Congratulations!* ...You have now built a reverse proxy for an existing backend service. You should see the proxy **Overview** tab.
+#### 13. *Congratulations!* ...You have now built a reverse proxy for an existing backend service. You should see the proxy **Overview** tab.
 
 ![Image describing various features of the API Proxy overview page.  Details about proxy revision, deployment state, virtual hosts, and proxy and target endpoints can be seen here.  Additionally there are links to open the "develop" view or the "trace" tool.](./media/image_16.png)
 
@@ -128,9 +128,9 @@ curl -X GET "http://apiptb.devtest.atohdtnet.gov.au/v1/{{your initials}}_hipster
 
 ## Save the API Proxy
 
-##### 1. Let’s save the API Proxy locally as an API Bundle so that we can reuse it in other labs.
+#### 1. Let’s save the API Proxy locally as an API Bundle so that we can reuse it in other labs.
 
-##### 2. Save the API Proxy by downloading the proxy bundle, See screenshot below for instructions.
+#### 2. Save the API Proxy by downloading the proxy bundle, See screenshot below for instructions.
 
 ![Image describing the process of downloading an API Proxy locally.  User is on the "Overview" page of the API Proxy and has clicked "Project" then "Download Revision"](./media/image_20.png)
 
