@@ -78,8 +78,8 @@ A JSON Web Token is a proposed Internet standard for creating data with optional
 9. Replace the poicy xml code with the following: 
 ```xml
 <ExtractVariables>
-   <Headername="Authorization">
-      <PatternignoreCase="false">Bearer {jwt_token}</Pattern>
+   <Header name="Authorization">
+      <Pattern ignoreCase="false">Bearer {jwt_token}</Pattern>
     </Header>
 </ExtractVariables>
 ```
