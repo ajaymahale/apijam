@@ -70,7 +70,7 @@ In this lab, we will learn how to
 
 
 
-9. Go with the **secure Virtual Host** configuration. Ensure that the **default** one is unchecked.
+9. Go with the **secure Virtual Host** configuration. Ensure that the **default** one is checked.
 
 ![Image describing how to enable or disable the http and/or https virtual hosts.  User has unchecked "default" so only secure (https) is checked.](./media/image_13_new.png)
 
