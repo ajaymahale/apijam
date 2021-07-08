@@ -2,13 +2,21 @@
 
 ***The screenshots are taken from the Apigee Cloud version and may differ slightly from what you see in your installation within the organisation. All concepts remain the same.***
 
+
+#
+Duration : 15-20 mins
+
+Persona : API Product Team & API Dev Team
+
+
 # What will be covered in this lab?
 In this lab you will create 3 products aligned with your API product strategy to offer a tiered model and have different quotas attached to each product. We will also understand how Quotas can be set on different products and how they are enabled/enforced.
 
-#
-Duration : 15 mins
+## Context
 
-Persona : API Product Team & API Dev Team
+[https://www.youtube.com/watch?v=z8Rj_VzSbh4](https://www.youtube.com/watch?v=z8Rj_VzSbh4)
+
+[https://www.youtube.com/watch?v=1RDDpH0wOdc](https://www.youtube.com/watch?v=1RDDpH0wOdc)
 
 # Use Case
 
