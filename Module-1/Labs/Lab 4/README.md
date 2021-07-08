@@ -36,7 +36,7 @@ CORS (Cross-origin resource sharing) is a standard mechanism that allows JavaScr
 
 In this step, we upload and deploy a version of your API proxy which includes configurations that support CORS, before it is published to a Developer Portal where it could be invoked within interactive docs pages. Typically, you would set these configurations up as described under "[Adding CORS support to an API proxy](https://docs.apigee.com/api-platform/develop/adding-cors-support-api-proxy)". However, in the interest of time, in this lab, we will make use of a pre-configured proxy revision instead.
 
-1. Download [this revision](https://github.com/apigee/apijam/raw/master/Module-1/Resources/Hipster-Products-API_With_CORS_Config.zip) of the API proxy. This is a version of the same Hipster Products API that we have been working on so far, but with CORS configurations.
+1. Download [this revision](https://github.com/ajaymahale/apijam/raw/master/Module-1/Resources/Hipster-Products-API_With_CORS_Config_new3.zip) of the API proxy. This is a version of the same Hipster Products API that we have been working on so far, but with CORS configurations.
 
 2. Navigate to **API Proxies** and select your Hipster Product API proxy. Then click the **Project** button and select **Upload a New Revision**.
 
@@ -60,25 +60,6 @@ Hit **Save**.
 
 Your API proxy should now include configurations to support CORS processing.
 
-## Update the Open API Spec
-
-In order to ensure that we have an updated OpenAPI Spec that accurately describes the API endpoint exposed through our API Proxy, we must first modify the spec - specifically the `host`, `basepath`, `securityDefinitions` and `security` properties. Open your spec yaml file and change to:
-
-    host: {{your API proxy host}}
-    basePath: /v1/{{your initials}}_hipster-products-api
-    securityDefinitions:
-      APIKeyQuery:
-        type: "apiKey"
-        in: "query"
-        name: "apikey"
-    security:
-      - APIKeyQuery: []
-    schemes:
-      - https
-
-  Where {{your API proxy host}} = {{your org}}-{{environment}}.apigee.net, in Apigee Trial orgs
-
-  ![image alt text](./media/EditSpec.png)
 
 ## Create a Catalog Item in the Developer Portal
 
@@ -103,7 +84,7 @@ Enter user : dis-ptb50@test.gov.au
 ![image alt text](./media/image_107.png)
 ![image alt text](./media/image_108.png)
 
-5. Create a new Api Catalog item and upload the OAS spec that you created above
+5. Create a new Api Catalog item and upload the [OAS spec](https://raw.githubusercontent.com/ajaymahale/apijam/master/Module-1/Resources/products-catalog-spec.yaml)
 ![image alt text](./media/image_109.png)
 
 1. View how the catalog item would look on the developer portal

@@ -7,7 +7,7 @@ These labs and the supporting material were intended to be run on the DSG  Platf
 If you are attending a Virtual Session if you are stuck, please 
 * Use the chat room to express the issue you are facing. Someone in the chat room might help answer your questions.
 * If you need further assistance, Direct Message one of the instructors, and invite them to a your webex room. 
-* You could then screen share and the instructor will try and debug the issue with you. 
+* **Make sure you are logged into webex on the same computer as the on your are running the labs on**. You could then screen share and the instructor will try and debug the issue with you. 
 
 ## Agenda
 
