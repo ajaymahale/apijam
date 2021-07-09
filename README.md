@@ -17,7 +17,7 @@ If you are attending a Virtual Session if you are stuck, please
 ## Agenda
 
 ** **
-### [Introductions (9:30 am - 9:45 am)](#)
+### [Introductions (9:30 am - 10:00 am)](#)
 * Quick Introductions
 * Setup for labs 
 * A brief look at Apigee Entities
