@@ -9,6 +9,11 @@ If you are attending a Virtual Session if you are stuck, please
 * If you need further assistance, Direct Message one of the instructors, and invite them to a your webex room. 
 * **Make sure you are logged into webex on the same computer as the on your are running the labs on**. You could then screen share and the instructor will try and debug the issue with you. 
 
+## System Requirements
+* A machine(Winodws/Linx) on the Organisation Network and is able to connect out the internet
+* Browser - Google Chrome(preferred), Firefox(preferred) , Edge(Might have some issues)
+* HttpClient - Fiddler/Postman OR cUrl/Powershell
+
 ## Agenda
 
 ** **
@@ -34,10 +39,10 @@ If you are attending a Virtual Session if you are stuck, please
 
 ** ** 
 
-### [Api Jam - DSG security deep dive (1:00 pm - 2:00 pm)](./Module-2a) 
+### [Api Jam - DSG security (1:00 pm - 2:00 pm)](./Module-2a) 
 * Introduction to API Security
 * Lab 1 - Throttle your API Traffic to prevent DoS, using Apigee Spike Arrest
-* Lab 2 - DSG security exercise
+* Lab 2 - DSG security exercise, something that mimics ATOs security using Signed JWT
 
 ** **
 

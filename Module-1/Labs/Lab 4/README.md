@@ -76,7 +76,7 @@ Your API proxy should now include configurations to support CORS processing.
 ![image alt text](./media/image_102.png)
 ![image alt text](./media/image_103.png)
 
-Enter user : dis-ptb50@test.gov.au
+##### Enter user : dis-ptb50@test.gov.au
 ![image alt text](./media/image_104.png)
 ![image alt text](./media/image_105.png)
 
@@ -99,7 +99,7 @@ Enter user : dis-ptb50@test.gov.au
 
 ## Ensure that Bronze (Free) API Product is accessible as Public
 
-#### 1. Visit the Apigee Edge
+#### 1. Visit the Apigee Edge - the apigee admin portal
 #### 2. Find your Bronze Api Product 
 #### 3. Ensure that it's access is public
 
@@ -126,7 +126,7 @@ Enter user : dis-ptb50@test.gov.au
 
 
 
-### Create DSP(Team) App
+### Create DSP(Team) App (OPTIONAL - READ ONLY)
 
 // TBD: This feature exists but is not covered in this lab. The DPO is responsible for onboarding DSPs(Teams) on to the platform. Ask your friendly neighborhood Terem instructor for more details or a demo.
 #### 1. Browse to the developer portal

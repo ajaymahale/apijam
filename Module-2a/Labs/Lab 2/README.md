@@ -23,8 +23,8 @@ When using the Verify JWS/JWT policy, an invalid JWS/JWT will be rejected and wi
 # Instructions
 
 As part of this lab, you will:
-- Generate a Sample JWT token 
-- Create a Request using yoru REST Client (Postman, Curl, Powershell or similar) with an authorization Header containig the JWT token
+- Generate a JWT token 
+- Create a Request using yoru REST Client (Postman, cUrl, Powershell or similar) with an authorization Header containig the JWT token
 - Secure the sample Hipster Products API with an JWT token verification policy. 
 
 ## Generate a JWT token
@@ -77,7 +77,8 @@ A JSON Web Token is a proposed Internet standard for creating data with optional
 
 9. Replace the poicy xml code with the following: 
 ```xml
-<ExtractVariables>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="Extract-Variables-1">
    <Header name="Authorization">
       <Pattern ignoreCase="false">Bearer {jwt_token}</Pattern>
     </Header>
@@ -119,36 +120,45 @@ A JSON Web Token is a proposed Internet standard for creating data with optional
 
 #### Note: the following steps assume you are using postman as your rest client, different clients will have different ways of achieving the same result.
 
-9. Open up your Rst Client 
+9. Open up your Rest Client 
 
 11. Create a GET request  to the products endpoint of your Proxy.
 
-12. Under the Authorization settings of your client (screenshot shows postman) include a Beare Token and repace the value of the token with the one you generated on the first section of this lab. **Note: refreh your token if it has allready expired**
+12. Under the Authorization settings of your client (screenshot shows postman) include a Bearer Token and replace the value of the token with the one you generated on the first section of this lab. **Note: refresh your token if it has expired**
 
 ![image alt text](./media/image_12_a.png)
 
-13. **Alternative to Postman** if you do not have access to Postman an alternative way to test this scenario is by using the following powershell script. 
+13. **Alternative 1 to Postman - Powershell** if you do not have access to Postman an alternative way to test this scenario is by using the following powershell script. 
 ```
-$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
-$headers.Add("Authorization", "Bearer [your_jwt_token]")
-$response = Invoke-RestMethod 'http://apiptb.devtest.atohdtnet.gov.au/[your_initials]-hipster-products-api/products' -Method 'GET' -Headers $headers
-$response | ConvertTo-Json
+$HEADERS = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+$JWT_TOKEN = "<PASTE_YOUR_JWT_TOKEN_HERE>"
+$API_RUNTIME_DOMAIN = "<YOUR_API_RUNTIME_DOMAIN"
+$YOUR_PROXY_INITIALS = "<YOUR_PROXY_INITIALS"
+$HEADERS.Add("Authorization", "Bearer $JWT_TOKEN")
+$RESPONSE = Invoke-RestMethod 'http://$API_RUNTIME_DOMAIN/$YOUR_PROXY_INITIALS-hipster-products-api/products' -Method 'GET' -Headers $HEADERS
+$RESPONSE | ConvertTo-Json
 ```
 
-Copy the avobe code into a new file ,you will need to replace the relevant parameters:
-- Url to your proxy 
-- JWT token generated in section 1 of this lab
+Copy the above code into a new file, you will need to replace the relevant parameters which are in angle brackets(<Values_To_Be_Replaced>) with the appropriate values.
+
 
 Save this file with a .ps1 extendion and execute from a powershell console.
 
-14. As you execute the requests you should see them being traced inside of Apigees Trace Session Screen.
+14. **Alternative 2 to Postman - Fiddler** If **Fiddler** is your prefrred http client, and you have following your instructions with it, 
+* Coompose an http get request to the /products endpoint
+* Add the header ``` Authorization: Bearer <REPLACE_THIS_TEXT_WITH_JWT_TOKEN> ``` to your fiddler request
+
+15. Start an Apigee trace session for the proxy. **NOTE: Only start the trace, we will be sending the http request through powershell**
+
+16. As you execute the requests you should see them being traced inside of Apigee's Trace Session Screen.
 
 ![image alt text](./media/image_12_b.png)
 
-If everything goes well you should get a 200 response and a list of products .Try to modify your token to make it invalid and in that way observe the policy rejecting the token.
+If everything goes well you should get a 200 response and a list of products in json format.Try to modify your token to make it invalid and in that way observe the policy rejecting the token.
 
 ## Bonus Points
 
-Try to add specific claims to your JWT Token and modify your JWT verification Policy to validate this claims. refer to [Step 2](#publickey) in the first section.
+* Try to add specific claims to your JWT Token and modify your JWT verification Policy to validate this claims. refer to [Step 2](#publickey) in the first section.
+* The current proxy even though returns a status code of 401 still returns a product response. Use the Raise Fault policy to raise a fault when the VerifyJwt policy fails. This should not stop the request at the Raise Fault and not send the request to the backend.
 
-Full documentation on how the JWT-Verification pilicy works can be found [Here](https://docs.apigee.com/api-platform/reference/policies/verify-jwt-policy)
+* Full documentation on how the JWT-Verification pilicy works can be found [Here](https://docs.apigee.com/api-platform/reference/policies/verify-jwt-policy)
