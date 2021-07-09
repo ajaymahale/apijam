@@ -99,7 +99,7 @@ Your API proxy should now include configurations to support CORS processing.
 
 ## Ensure that Bronze (Free) API Product is accessible as Public
 
-#### 1. Visit the Apigee Edge
+#### 1. Visit the Apigee Edge - the apigee admin portal
 #### 2. Find your Bronze Api Product 
 #### 3. Ensure that it's access is public
 
