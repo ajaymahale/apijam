@@ -10,7 +10,7 @@ If you are attending a Virtual Session if you are stuck, please
 * **Make sure you are logged into webex on the same computer as the on your are running the labs on**. You could then screen share and the instructor will try and debug the issue with you. 
 
 ## System Requirements
-* A machine(Winodws/Linx) on the ATONET 
+* A machine(Winodws/Linx) on the Organisation Network  
 * Browser - Google Chrome(preferred), Firefox(preferred) , Edge(Might have some issues)
 * HttpClient - Fiddler/Postman OR cUrl/Powershell
 
