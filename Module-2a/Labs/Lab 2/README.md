@@ -128,7 +128,7 @@ A JSON Web Token is a proposed Internet standard for creating data with optional
 
 ![image alt text](./media/image_12_a.png)
 
-13. **Alternative to Postman** if you do not have access to Postman an alternative way to test this scenario is by using the following powershell script. 
+13. **Alternative 1 to Postman - Powershell** if you do not have access to Postman an alternative way to test this scenario is by using the following powershell script. 
 ```
 $HEADERS = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
 $JWT_TOKEN = "<PASTE_YOUR_JWT_TOKEN_HERE>"
@@ -144,9 +144,13 @@ Copy the above code into a new file, you will need to replace the relevant param
 
 Save this file with a .ps1 extendion and execute from a powershell console.
 
-14. Start an Apigee trace session for the proxy. **NOTE: Only start the trace, we will be sending the http request through powershell**
+14. **Alternative 2 to Postman - Fiddler** If **Fiddler** is your prefrred http client, and you have following your instructions with it, 
+* Coompose an http get request to the /products endpoint
+* Add the header ``` Authorization: Bearer <REPLACE_THIS_TEXT_WITH_JWT_TOKEN> ``` to your fiddler request
 
-15. As you execute the requests you should see them being traced inside of Apigee's Trace Session Screen.
+15. Start an Apigee trace session for the proxy. **NOTE: Only start the trace, we will be sending the http request through powershell**
+
+16. As you execute the requests you should see them being traced inside of Apigee's Trace Session Screen.
 
 ![image alt text](./media/image_12_b.png)
 
