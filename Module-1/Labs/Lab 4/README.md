@@ -76,7 +76,7 @@ Your API proxy should now include configurations to support CORS processing.
 ![image alt text](./media/image_102.png)
 ![image alt text](./media/image_103.png)
 
-Enter user : dis-ptb50@test.gov.au
+##### Enter user : dis-ptb50@test.gov.au
 ![image alt text](./media/image_104.png)
 ![image alt text](./media/image_105.png)
 
