@@ -24,7 +24,7 @@ When using the Verify JWS/JWT policy, an invalid JWS/JWT will be rejected and wi
 
 As part of this lab, you will:
 - Generate a JWT token 
-- Create a Request using yoru REST Client (Postman, Curl, Powershell or similar) with an authorization Header containig the JWT token
+- Create a Request using yoru REST Client (Postman, cUrl, Powershell or similar) with an authorization Header containig the JWT token
 - Secure the sample Hipster Products API with an JWT token verification policy. 
 
 ## Generate a JWT token
