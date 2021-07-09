@@ -126,7 +126,7 @@ Your API proxy should now include configurations to support CORS processing.
 
 
 
-### Create DSP(Team) App
+### Create DSP(Team) App (OPTIONAL - READ ONLY)
 
 // TBD: This feature exists but is not covered in this lab. The DPO is responsible for onboarding DSPs(Teams) on to the platform. Ask your friendly neighborhood Terem instructor for more details or a demo.
 #### 1. Browse to the developer portal
