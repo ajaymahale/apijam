@@ -36,10 +36,10 @@ If you are attending a Virtual Session if you are stuck, please
 
 ** ** 
 
-### [Api Jam - DSG security deep dive (1:00 pm - 2:00 pm)](./Module-2a) 
+### [Api Jam - DSG security (1:00 pm - 2:00 pm)](./Module-2a) 
 * Introduction to API Security
 * Lab 1 - Throttle your API Traffic to prevent DoS, using Apigee Spike Arrest
-* Lab 2 - DSG security exercise
+* Lab 2 - DSG security exercise, something that mimics ATOs security using Signed JWT
 
 ** **
 
