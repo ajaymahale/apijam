@@ -20,7 +20,7 @@ If you are attending a Virtual Session if you are stuck, please
 ### [Introductions (9:30 am - 10:00 am)](#)
 * Quick Introductions
 * Setup for labs 
-* A brief look at Apigee Entities
+* A quick overview of the Apigee Entities we will work with today
   ![A brief look at Apigee Entities](./media/apigee_entities.png)
   
 
