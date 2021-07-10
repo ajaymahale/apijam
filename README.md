@@ -7,7 +7,7 @@
 
 ## Virtual Session Instructions
 * You will be assigned to a virtual breakout room with a few people and a trainer in the room
-* If you have any issues or a question **donot hesitate** to raise them in the break out room.The trainers in the room are there to help you.
+* If you have any issues or a question **do not hesitate** to raise them in the break out room.The trainers in the room are there to help you.
 * if you are stuck on a step, find the closest link to the step that's failing and add it to the chatroom.
 ![Shows a screenshot for asking for help by finding the closest section link you can find for the step you are on](./media/asking_for_help.png)
   This helps the trainer understand the context as to where you are and what you are trying to achieve. 
