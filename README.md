@@ -4,7 +4,7 @@ The original content has been borrowed from Googles API Jam repository on github
 
 These labs and the supporting material were intended to be run on the DSG  Platform. We will be running them in the Private Cloud Apigee Installation. There will be minor cosmetic and feature differences you will find while running the labs like the screenshots provided in the content vs what you see on screen will have slight variations. Feel free to catch an instructor if you get stuck.
 
-If you are attending a Virtual Session 
+## If you are attending a Virtual Session 
 * You will be assigned to a virtual breakout room with a few people and a trainer in the room
 * If you have any issues or a question **donot hesitate** to raise them in the break out room.The trainers in the room are there to help you.
 * if you are stuck on a step, find the closest link to the step that's failing and add it to the chatroom. This helps the trainer understand the context as to where you are and what you are trying to achieve. 
