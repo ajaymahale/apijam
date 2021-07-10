@@ -1,18 +1,21 @@
 # Apigee API Jam Lab Guides
+## Introduction
+* These labs and the supporting material were intended to be run on the DSG  Platform. 
+* We will be running them in the Private Cloud(on-premise) Apigee Installation. 
+* There will be minor cosmetic and feature differences you will find while running the labs like the screenshots provided in the content versus what you see on screen will have slight variations. 
+* Feel free to catch an instructor if you get stuck.
 
-The original content has been borrowed from Googles API Jam repository on github.
-
-These labs and the supporting material were intended to be run on the DSG  Platform. We will be running them in the Private Cloud Apigee Installation. There will be minor cosmetic and feature differences you will find while running the labs like the screenshots provided in the content vs what you see on screen will have slight variations. Feel free to catch an instructor if you get stuck.
-
-## If you are attending a Virtual Session 
+## Virtual Session Instructions
 * You will be assigned to a virtual breakout room with a few people and a trainer in the room
 * If you have any issues or a question **donot hesitate** to raise them in the break out room.The trainers in the room are there to help you.
-* if you are stuck on a step, find the closest link to the step that's failing and add it to the chatroom. This helps the trainer understand the context as to where you are and what you are trying to achieve. 
-* Actively screen share, visually sharing what you are going through will help diagnose the issue faster.
-* **Make sure you are logged into webex on the same computer as the on your are running the labs on**. You could then screen share and the instructor will try and debug the issue with you. 
+* if you are stuck on a step, find the closest link to the step that's failing and add it to the chatroom.
+![Shows a screenshot for asking for help by finding the closest section link you can find for the step you are on](./media/asking_for_help.png)
+  This helps the trainer understand the context as to where you are and what you are trying to achieve. 
+* **Make sure you are logged into the Virtual Room on the same computer as the on your are running the labs on**. You could then screen share and the instructor will try and debug the issue with you. 
+* Actively screen share, showing the group exactly what you are going through could help diagnose the issue faster.
 
 ## System Requirements
-* A machine(Winodws/Linx) on the Organisation Network and is able to connect out the internet
+* A machine(Windows/Linux) on the Organisation Network and is able to connect out the internet
 * Browser - Google Chrome(preferred), Firefox(preferred) , Edge(Might have some issues)
 * HttpClient - Fiddler/Postman OR cUrl/Powershell
 
